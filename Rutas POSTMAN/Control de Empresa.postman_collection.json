@@ -1,0 +1,1189 @@
+{
+	"info": {
+		"_postman_id": "8cd0400f-287b-4871-a6c0-16002d5b69f3",
+		"name": "Control de Empresa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "enterprise",
+			"item": [
+				{
+					"name": "saveEnterprise",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTNjOWY1ZjMyMjIyZWNhMDBlNmMiLCJlbWFpbCI6ImVndWVycmFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJlZ3VlcnJhIiwibmFtZSI6IkVyaWNrIiwibGFzdG5hbWUiOiJHdWVycmEiLCJkZXBhcnRtZW50IjoiSW5mb3Jtw6F0aWNhIiwiam9iIjoiSW5nZW5pZXJvIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTk0NDkyNzE0LCJleHAiOjE1OTQ0OTQ1MTR9.-T7kNkUE2XfrwsbZ3aQfUP98b2Sdq7D9Ph-e-XINf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "comertialName",
+									"value": "Coca-Cola",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "businessName",
+									"value": "Toshiba",
+									"type": "text"
+								},
+								{
+									"key": "ceo",
+									"value": "5e60a3c9f5f32222eca00e6c",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Guatemala",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "84756916",
+									"type": "text"
+								},
+								{
+									"key": "activity",
+									"value": "Electrónica",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/enterprise/saveEnterprise",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"enterprise",
+								"saveEnterprise"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEnterprise",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTNmNGY1ZjMyMjIyZWNhMDBlNmQiLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo5NzMzMDkzNSwiY2VvIjoiNWU2MGEzYzlmNWYzMjIyMmVjYTAwZTZjIiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1ODMzOTE3NTIsImV4cCI6MTU4MzM5MzU1Mn0.gQMe1Ya2a6jwfIVGV8w5Fs0_4sPoTNG5NOXEqb8IgYg\"",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/enterprise/deleteEnterprise/5e60a3f4f5f32222eca00e6d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"enterprise",
+								"deleteEnterprise",
+								"5e60a3f4f5f32222eca00e6d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEnterprise",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwOTBiY2M3YTYwOTA4MTg2NDJkYjciLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo4MzM5MjE5NywiY2VvIjoiNWU2MDkwMzhjN2E2MDkwODE4NjQyZGI2IiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1ODMzODY4MzYsImV4cCI6MTU4MzM4ODYzNn0.sOlJgJmjPU6IN5E7dpzfaUOekcJg3S0B6bg2v_ERhwo\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "phone",
+									"value": "84579625",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/enterprise/updateEnterprise/5e6090bcc7a6090818642db7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"enterprise",
+								"updateEnterprise",
+								"5e6090bcc7a6090818642db7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "countEmployees",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTRiOWY1ZjMyMjIyZWNhMDBlNzEiLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo0NTU1NjI5NiwiY2VvIjoiNWU2MGEzYzlmNWYzMjIyMmVjYTAwZTZjIiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1OTQ0OTM3OTUsImV4cCI6MTU5NDQ5NTU5NX0.ZUs3Vjc2ZOqugHXKm7silt0KjYe_j1jUudagW8RyRnc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/enterprise/countEmployees/5e60a4b9f5f32222eca00e71",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"enterprise",
+								"countEmployees",
+								"5e60a4b9f5f32222eca00e71"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listEnterprises",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTNjOWY1ZjMyMjIyZWNhMDBlNmMiLCJlbWFpbCI6ImVndWVycmFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJlZ3VlcnJhIiwibmFtZSI6IkVyaWNrIiwibGFzdG5hbWUiOiJHdWVycmEiLCJkZXBhcnRtZW50IjoiSW5mb3Jtw6F0aWNhIiwiam9iIjoiSW5nZW5pZXJvIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTk0NDkzMTMwLCJleHAiOjE1OTQ0OTQ5MzB9.RYIN-G9ZSs0wH_NWfiZtipwh5uuu6Ak73qvF6vLCK_k",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/enterprise/listEnterprises",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"enterprise",
+								"listEnterprises"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listProducts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTRiOWY1ZjMyMjIyZWNhMDBlNzEiLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo0NTU1NjI5NiwiY2VvIjoiNWU2MGEzYzlmNWYzMjIyMmVjYTAwZTZjIiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1OTQ0OTM3OTUsImV4cCI6MTU5NDQ5NTU5NX0.ZUs3Vjc2ZOqugHXKm7silt0KjYe_j1jUudagW8RyRnc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/enterprise/listProducts/5e60a4b9f5f32222eca00e71",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"enterprise",
+								"listProducts",
+								"5e60a4b9f5f32222eca00e71"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "businessCode",
+									"value": "45556296",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "paiz123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/enterprise/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"enterprise",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "productControl",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTRiOWY1ZjMyMjIyZWNhMDBlNzEiLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo0NTU1NjI5NiwiY2VvIjoiNWU2MGEzYzlmNWYzMjIyMmVjYTAwZTZjIiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1OTQ0OTM3OTUsImV4cCI6MTU5NDQ5NTU5NX0.ZUs3Vjc2ZOqugHXKm7silt0KjYe_j1jUudagW8RyRnc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/enterprise/productControl/5e60a4b9f5f32222eca00e71/5e60a560318c2a2e680bec89",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"enterprise",
+								"productControl",
+								"5e60a4b9f5f32222eca00e71",
+								"5e60a560318c2a2e680bec89"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listBranchOffices",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTRiOWY1ZjMyMjIyZWNhMDBlNzEiLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo0NTU1NjI5NiwiY2VvIjoiNWU2MGEzYzlmNWYzMjIyMmVjYTAwZTZjIiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1OTQ0OTM3OTUsImV4cCI6MTU5NDQ5NTU5NX0.ZUs3Vjc2ZOqugHXKm7silt0KjYe_j1jUudagW8RyRnc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/enterprise/listBranchOffices/5e60a4b9f5f32222eca00e71",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"enterprise",
+								"listBranchOffices",
+								"5e60a4b9f5f32222eca00e71"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createExcel",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTNmNGY1ZjMyMjIyZWNhMDBlNmQiLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo5NzMzMDkzNSwiY2VvIjoiNWU2MGEzYzlmNWYzMjIyMmVjYTAwZTZjIiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1ODMzOTE3NTIsImV4cCI6MTU4MzM5MzU1Mn0.gQMe1Ya2a6jwfIVGV8w5Fs0_4sPoTNG5NOXEqb8IgYg\"",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/enterprise/createExcel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"enterprise",
+								"createExcel"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "employee",
+			"item": [
+				{
+					"name": "saveADMIN",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "eguerra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Erick",
+									"type": "text"
+								},
+								{
+									"key": "department",
+									"value": "Informática",
+									"type": "text"
+								},
+								{
+									"key": "job",
+									"value": "Ingeniero",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "eguerra@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "Guerra",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/employee/saveADMIN",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"employee",
+								"saveADMIN"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveEmployee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTNmNGY1ZjMyMjIyZWNhMDBlNmQiLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo5NzMzMDkzNSwiY2VvIjoiNWU2MGEzYzlmNWYzMjIyMmVjYTAwZTZjIiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1ODMzOTE3NTIsImV4cCI6MTU4MzM5MzU1Mn0.gQMe1Ya2a6jwfIVGV8w5Fs0_4sPoTNG5NOXEqb8IgYg\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "dgarcia",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "dgarcia123",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "Daniel",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "García",
+									"type": "text"
+								},
+								{
+									"key": "department",
+									"value": "Contabilidad",
+									"type": "text"
+								},
+								{
+									"key": "job",
+									"value": "Auditor",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "dgarcia@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/employee/saveEmployee/5e60a4b9f5f32222eca00e71",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"employee",
+								"saveEmployee",
+								"5e60a4b9f5f32222eca00e71"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEmployee",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVmMmEyNzkzYzY4NTFlOThhMTAzNzAiLCJlbWFpbCI6ImVndWVycmFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJlZ3VlcnJhIiwibmFtZSI6IkVyaWNrIiwibGFzdG5hbWUiOiJHdWVycmEiLCJkZXBhcnRtZW50IjoiSW5mb3Jtw6F0aWNhIiwiam9iIjoiSW5nZW5pZXJvIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTgzMjk1MTM0LCJleHAiOjE1ODMyOTY5MzR9.5LKZ9EiJ_9JiWC2QA5DieDLMgLv2AoY11hAyPFzCDM4\"",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/employee/deleteEmployee//5e5f2a2793c6851e98a10370",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"employee",
+								"deleteEmployee",
+								"",
+								"5e5f2a2793c6851e98a10370"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEmployee",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "eguerra",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/employee/updateEmployee/5e4ca22dca489010a419175d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"employee",
+								"updateEmployee",
+								"5e4ca22dca489010a419175d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchEmployee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTNjOWY1ZjMyMjIyZWNhMDBlNmMiLCJlbWFpbCI6ImVndWVycmFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJlZ3VlcnJhIiwibmFtZSI6IkVyaWNrIiwibGFzdG5hbWUiOiJHdWVycmEiLCJkZXBhcnRtZW50IjoiSW5mb3Jtw6F0aWNhIiwiam9iIjoiSW5nZW5pZXJvIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTk0NDkyNzE0LCJleHAiOjE1OTQ0OTQ1MTR9.-T7kNkUE2XfrwsbZ3aQfUP98b2Sdq7D9Ph-e-XINf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search",
+									"value": "ing",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "j",
+									"type": "text"
+								},
+								{
+									"key": "job",
+									"value": "Ing",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "department",
+									"value": "Contab",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/employee/searchEmployee/5f0a07780573cb04d48a2c2b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"employee",
+								"searchEmployee",
+								"5f0a07780573cb04d48a2c2b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3800/employee/searchEmployee/5e4df01206fe4208d4326d18",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search",
+									"value": "z",
+									"type": "text"
+								},
+								{
+									"key": "search",
+									"value": "n",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "department",
+									"value": "s",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/employee/searchEmployee/5e4df01206fe4208d4326d18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"employee",
+								"searchEmployee",
+								"5e4df01206fe4208d4326d18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "eguerra",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/employee/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"employee",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAdmin",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVmMmEyNzkzYzY4NTFlOThhMTAzNzAiLCJlbWFpbCI6ImVndWVycmFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJlZ3VlcnJhIiwibmFtZSI6IkVyaWNrIiwibGFzdG5hbWUiOiJHdWVycmEiLCJkZXBhcnRtZW50IjoiSW5mb3Jtw6F0aWNhIiwiam9iIjoiSW5nZW5pZXJvIiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNTgzMjk1MTM0LCJleHAiOjE1ODMyOTY5MzR9.5LKZ9EiJ_9JiWC2QA5DieDLMgLv2AoY11hAyPFzCDM4\"",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/employee/deleteAdmin/5e5f2a2793c6851e98a10370",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"employee",
+								"deleteAdmin",
+								"5e5f2a2793c6851e98a10370"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createExcel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3800/employee/createExcel/5e60a4b9f5f32222eca00e71",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"employee",
+								"createExcel",
+								"5e60a4b9f5f32222eca00e71"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "branchOffice",
+			"item": [
+				{
+					"name": "saveBranchOffice",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTRiOWY1ZjMyMjIyZWNhMDBlNzEiLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo0NTU1NjI5NiwiY2VvIjoiNWU2MGEzYzlmNWYzMjIyMmVjYTAwZTZjIiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1ODMzOTE5NDUsImV4cCI6MTU4MzM5Mzc0NX0.Uem2VvGGjULmvQVQKVzCJu4gOuMKjsK3PDJDpE1waSo\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Paiz Petapa",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Avenida Petapa",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "87549632",
+									"type": "text"
+								},
+								{
+									"key": "manager",
+									"value": "5e60a4f1f5f32222eca00e73",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/branchOffice/saveBranchOffice/5e60a4b9f5f32222eca00e71",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"branchOffice",
+								"saveBranchOffice",
+								"5e60a4b9f5f32222eca00e71"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateBranchOffice",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVmMzA1NGJiNDc5ZDI5NDhjZjdjYWUiLCJidXNpbmVzc05hbWUiOiJQaXhhciIsImJ1c2luZXNzQ29kZSI6MTcwODUyMjIsImNlbyI6IjVlNWYyZWFiYmI0NzlkMjk0OGNmN2NhYSIsImFkZHJlc3MiOiJFc3RhZG9zIFVuaWRvcyIsInBob25lIjo3NTUwODIyLCJhY3Rpdml0eSI6IkFuaW1hZG9yYSIsImlhdCI6MTU4MzI5NjYyMywiZXhwIjoxNTgzMjk4NDIzfQ.lsDDjb5wWVvy0oUxCpHFmmysz8mq9AsoyHmrywp5dps\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Pixar México",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/branchOffice/updateBranchOffice/5e5f3054bb479d2948cf7cae/5e5f33cfd615cd1b94c2c629",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"branchOffice",
+								"updateBranchOffice",
+								"5e5f3054bb479d2948cf7cae",
+								"5e5f33cfd615cd1b94c2c629"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteBranchOffice",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVmMzA1NGJiNDc5ZDI5NDhjZjdjYWUiLCJidXNpbmVzc05hbWUiOiJQaXhhciIsImJ1c2luZXNzQ29kZSI6MTcwODUyMjIsImNlbyI6IjVlNWYyZWFiYmI0NzlkMjk0OGNmN2NhYSIsImFkZHJlc3MiOiJFc3RhZG9zIFVuaWRvcyIsInBob25lIjo3NTUwODIyLCJhY3Rpdml0eSI6IkFuaW1hZG9yYSIsImlhdCI6MTU4MzI5NjYyMywiZXhwIjoxNTgzMjk4NDIzfQ.lsDDjb5wWVvy0oUxCpHFmmysz8mq9AsoyHmrywp5dps\"",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/branchOffice/deleteBranchOffice/5e5f3054bb479d2948cf7cae/5e5f369fefcccf0674e6303b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"branchOffice",
+								"deleteBranchOffice",
+								"5e5f3054bb479d2948cf7cae",
+								"5e5f369fefcccf0674e6303b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "distributeProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTRiOWY1ZjMyMjIyZWNhMDBlNzEiLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo0NTU1NjI5NiwiY2VvIjoiNWU2MGEzYzlmNWYzMjIyMmVjYTAwZTZjIiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1ODMzOTE5NDUsImV4cCI6MTU4MzM5Mzc0NX0.Uem2VvGGjULmvQVQKVzCJu4gOuMKjsK3PDJDpE1waSo\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "product",
+									"value": "5e60a560318c2a2e680bec89",
+									"type": "text"
+								},
+								{
+									"key": "localQuantity",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/branchOffice/distributeProduct/5e60a4b9f5f32222eca00e71/5e60a53f318c2a2e680bec88",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"branchOffice",
+								"distributeProduct",
+								"5e60a4b9f5f32222eca00e71",
+								"5e60a53f318c2a2e680bec88"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listProducts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTRiOWY1ZjMyMjIyZWNhMDBlNzEiLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo0NTU1NjI5NiwiY2VvIjoiNWU2MGEzYzlmNWYzMjIyMmVjYTAwZTZjIiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1OTQ0OTM3OTUsImV4cCI6MTU5NDQ5NTU5NX0.ZUs3Vjc2ZOqugHXKm7silt0KjYe_j1jUudagW8RyRnc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3800/branchOffice/listProducts/5e60a4b9f5f32222eca00e71/5e60a53f318c2a2e680bec88",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"branchOffice",
+								"listProducts",
+								"5e60a4b9f5f32222eca00e71",
+								"5e60a53f318c2a2e680bec88"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "removeProduct",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "saveProduct",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTYwYTNmNGY1ZjMyMjIyZWNhMDBlNmQiLCJidXNpbmVzc05hbWUiOiJQYWl6IiwiYnVzaW5lc3NDb2RlIjo5NzMzMDkzNSwiY2VvIjoiNWU2MGEzYzlmNWYzMjIyMmVjYTAwZTZjIiwiYWRkcmVzcyI6Ikd1YXRlbWFsYSIsInBob25lIjo0ODU3OTYyNSwiYWN0aXZpdHkiOiJTdXBlcm1lcmNhZG8iLCJpYXQiOjE1ODMzOTE3NTIsImV4cCI6MTU4MzM5MzU1Mn0.gQMe1Ya2a6jwfIVGV8w5Fs0_4sPoTNG5NOXEqb8IgYg\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jabón",
+									"type": "text"
+								},
+								{
+									"key": "brand",
+									"value": "Pantene",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Jabón",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "5.50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/product/saveProduct/5e60a4b9f5f32222eca00e71",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"product",
+								"saveProduct",
+								"5e60a4b9f5f32222eca00e71"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProduct",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZTVmMzA1NGJiNDc5ZDI5NDhjZjdjYWUiLCJidXNpbmVzc05hbWUiOiJQaXhhciIsImJ1c2luZXNzQ29kZSI6MTcwODUyMjIsImNlbyI6IjVlNWYyZWFiYmI0NzlkMjk0OGNmN2NhYSIsImFkZHJlc3MiOiJFc3RhZG9zIFVuaWRvcyIsInBob25lIjo3NTUwODIyLCJhY3Rpdml0eSI6IkFuaW1hZG9yYSIsImlhdCI6MTU4MzM3MjY0OSwiZXhwIjoxNTgzMzc0NDQ5fQ.LCKGQZp0jrd8gZVpfVrbDjfpTnm3meEsne7krFZbjnk\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "shampoo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3800/product/updateProduct/5e5f3054bb479d2948cf7cae/5e5f4750f990792ba8130735",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"product",
+								"updateProduct",
+								"5e5f3054bb479d2948cf7cae",
+								"5e5f4750f990792ba8130735"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProduct",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3800/product/deleteProduct/5e5f3054bb479d2948cf7cae/5e605d0b198fdd19d0c09ead",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3800",
+							"path": [
+								"product",
+								"deleteProduct",
+								"5e5f3054bb479d2948cf7cae",
+								"5e605d0b198fdd19d0c09ead"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
